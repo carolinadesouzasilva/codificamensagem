@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificar / Decodificar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Codificador e decodificador</h1>
+    </header>
+
+<div class="container">
+    <form>
+
+       <div class="caixa1">
+
+            <label for="espaco1">Mensagem</label>
+            <textarea name="conteudo" id="msgentrada" rows="5" placeholder="Digite aqui a mensagem"></textarea>
+
+
+            <div class="opcao">
+                <select name="opcao" id="select">
+                    <option value="opcao1">Base 64</option>
+                    <option value="opcao2">Cifra de César</option>
+                </select>
+            </div>
+
+            <div class="escolha">
+    
+                <input type="radio" id="codificar" name="cod" value="codificar"><label for="codificar">Codificar</label>
+    
+                <input type="radio" id="decodificar" name="cod" value="decodificar"><label for="decodificar">Decodificar</label>
+           
+            </div>
+    
+            <div class="incremento">
+    
+                <input class="ocultarIncremento" id="incrementoOculto" 
+                    placeholder="Digite aqui o código">
+    
+            </div>
+    
+            
+    
+            <div class="btn">
+                <button  id="botaoCodifica">Clique aqui</button>
+            </div>
+    
+
+            <label class="msgconvertida" for="espaco2">Mensagem convertida</label>
+            <textarea  name="conteudo2" id="retornomensagem" rows="5" placeholder="O resultado será exibido aqui"></textarea>
+     
+        </div>
+
+    </form>
+
+</div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
